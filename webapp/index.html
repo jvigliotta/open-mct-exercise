@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Open MCT Coding exercise</title>
+  <meta name="description" content="MCT Coding Exercise for Jamie Vigiotta">
+  <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="title">
+			<i class="material-icons">remove_red_eye</i>
+			<h1>Telemetry Viewer</h1>
+		</div>
+
+		<div class="telemetry-type">
+			<label for="tel-type">Telemetry Point</label>
+			<select id="tel-type">
+				<option value="both">Both</option>
+				<option value="pwrv">pwr.v</option>
+				<option value="pwrc">pwr.c</option>
+			</select>
+		</div>
+
+		<div class="telemetry-data">
+			<div class="fixed-header">
+				<span id="id-sort">ID</span>
+				<span class="timestamp">Timestamp</span>
+				<span>Value</span>
+			</div>
+
+			<div class="table-wrap">
+
+			</div>
+		</div>
+
+	</div>
+
+  <script src="public/js/index.js"></script>
+</body>
+</html>

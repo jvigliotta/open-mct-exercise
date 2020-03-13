@@ -1,0 +1,121 @@
+body {
+	background: #EEE;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	background: #FFF;
+	width: 1140px;
+	margin: 0 auto;
+	padding: 25px;
+
+}
+
+.title {
+	text-align: center;
+	line-height: 0;
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+
+	i {
+		color: cornflowerBlue;
+		font-size: 40px;
+	}
+}
+
+.telemetry-type {
+	text-align: center;
+	font-size: 18px;
+
+	label {
+		text-transform: uppercase;
+		display: block;
+	}
+
+	select {
+		font-size: 18px;
+		width: 300px;
+		height: 30px;
+	}
+}
+
+.telemetry-data {
+	width: 70%;
+	margin-top: 50px;
+	margin-left: 15%;
+	border: 3px solid #888;
+	
+	.fixed-header {
+		box-sizing: border-box;
+		border: none;
+		display: flex;
+
+		span {
+			font-weight: bold;
+			color: #FFF;
+			width: 33.33%;
+			padding: 3px 0;
+			box-sizing: border-box;
+			text-align: center;
+		}
+	}
+
+	.table-wrap {
+		max-height: 500px;
+		height: 500px;
+		overflow-y: scroll;
+	}
+
+	.fixed-header {
+		background: #111;
+
+		.timestamp {
+			cursor: pointer;
+
+			&:hover {
+				background: #333;
+			}
+		}
+	}
+
+	table, .fixed-header {
+		border: 1px solid #111;
+		width: 100%;
+	}
+
+	table {
+		border-collapse: collapse;
+
+		tr {
+
+			&:hover {
+				background: #EFEFEF;
+			}
+
+			&:nth-child(odd) {
+				background: #eee;
+			}
+		}
+
+		td {
+			width: 33.33%;
+			padding: 3px 10px;
+			text-align: center;
+			border: 1px solid #111;
+
+			&.data-point {
+				color: cornflowerBlue;
+				font-weight: bold;
+				cursor: pointer;
+
+				&:hover {
+					background: cornflowerBlue;
+					color: #FFF;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+body {
+  background: #EEE;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  background: #FFF;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 25px; }
+
+.title {
+  text-align: center;
+  line-height: 0;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 15px;
+  margin-bottom: 50px; }
+  .title i {
+    color: cornflowerBlue;
+    font-size: 40px; }
+
+.telemetry-type {
+  text-align: center;
+  font-size: 18px; }
+  .telemetry-type label {
+    text-transform: uppercase;
+    display: block; }
+  .telemetry-type select {
+    font-size: 18px;
+    width: 300px;
+    height: 30px; }
+
+.telemetry-data {
+  width: 70%;
+  margin-top: 50px;
+  margin-left: 15%;
+  border: 3px solid #888; }
+  .telemetry-data .fixed-header {
+    box-sizing: border-box;
+    border: none;
+    display: flex; }
+    .telemetry-data .fixed-header span {
+      font-weight: bold;
+      color: #FFF;
+      width: 33.33%;
+      padding: 3px 0;
+      box-sizing: border-box;
+      text-align: center; }
+  .telemetry-data .table-wrap {
+    max-height: 500px;
+    height: 500px;
+    overflow-y: scroll; }
+  .telemetry-data .fixed-header {
+    background: #111; }
+    .telemetry-data .fixed-header .timestamp {
+      cursor: pointer; }
+      .telemetry-data .fixed-header .timestamp:hover {
+        background: #333; }
+  .telemetry-data table, .telemetry-data .fixed-header {
+    border: 1px solid #111;
+    width: 100%; }
+  .telemetry-data table {
+    border-collapse: collapse; }
+    .telemetry-data table tr:hover {
+      background: #EFEFEF; }
+    .telemetry-data table tr:nth-child(odd) {
+      background: #eee; }
+    .telemetry-data table td {
+      width: 33.33%;
+      padding: 3px 10px;
+      text-align: center;
+      border: 1px solid #111; }
+      .telemetry-data table td.data-point {
+        color: cornflowerBlue;
+        font-weight: bold;
+        cursor: pointer; }
+        .telemetry-data table td.data-point:hover {
+          background: cornflowerBlue;
+          color: #FFF; }
